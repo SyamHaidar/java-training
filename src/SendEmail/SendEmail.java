@@ -3,12 +3,22 @@ package SendEmail;
 public class SendEmail {
 
   public static void main(String[] args) {
-    SenderService senderService = new SenderService();
+    SenderService emailService = new SenderService();
 
-    senderService.SendEmail(
-        "receipt@gmail.com",
+    emailService.SendEmail( // send text only
+        "syamhaidar@gmail.com",
         "JavaMail API",
-        "This is test message");
+        "This is message body");
+
+    // emailService.SendHTMLEmail( // send html text
+    // "syamhaidar@gmail.com",
+    // "JavaMail API",
+    // "<h4>This is message body with html</h4>");
+
+    // emailService.SendFileEmail( send text with attachment
+    // "syamhaidar@gmail.com",
+    // "JavaMail API",
+    // "This is message body with file attachment");
   }
 
 }

@@ -1,4 +1,4 @@
-package FIles;
+package Files;
 
 import java.io.*;
 
