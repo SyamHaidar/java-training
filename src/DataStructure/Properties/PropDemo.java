@@ -7,7 +7,7 @@ public class PropDemo {
 
   public static void main(String args[]) {
     Properties capitals = new Properties();
-    Set states;
+    Set<Object> states;
     String str;
 
     capitals.put("Illinois", "Springfield");
@@ -18,7 +18,7 @@ public class PropDemo {
 
     // Show all states and capitals in hashtable.
     states = capitals.keySet(); // get set-view of keys
-    Iterator itr = states.iterator();
+    Iterator<Object> itr = states.iterator();
 
     while (itr.hasNext()) {
       str = (String) itr.next();
